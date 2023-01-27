@@ -1,0 +1,44 @@
+.feature-card {
+    width: 100%;
+    
+&__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+&__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primaryTextColor;
+}
+
+&__icon {
+    display: flex;
+    max-width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondaryBackgroundColor;
+    border-radius: 4px;
+      
+    @media screen and (min-width: 768px) {
+            max-width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+            max-width: 270px;
+    }
+}
+}

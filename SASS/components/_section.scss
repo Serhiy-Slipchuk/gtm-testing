@@ -1,0 +1,97 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+&--work {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding-top: 24px;
+    }
+}
+
+&--team {
+    background-color: $secondaryBackgroundColor;
+}
+}
+
+.section__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+.section__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: -30px;
+    margin-top: -30px;
+   
+&--portfolio {
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
+}
+
+&--clients {
+    @media screen and (max-width: 279px) {
+        display: block;
+        
+    }
+}
+}
+
+.section__item {
+    max-width: 450px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-color: $primaryBackgroundColor;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 370px;
+    }
+
+&--team, &--features {
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+}
+
+&--clients {
+   width: calc((100% - 60px) / 2);
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}
+}

@@ -1,0 +1,64 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $darkBackgroundColor;
+
+&__field {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+    
+}
+
+&__contacts {
+    margin-top: 20px;
+}
+
+&__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $liteTextColor;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
+}
+
+
+&__column:nth-child(1),
+&__column:nth-child(2) {
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
+}
+
+&__column:nth-child(2),
+&__column:nth-child(3) {
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    }
+}
+
+&__column:nth-child(2) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 5px;
+    }
+}
+
+&__column:nth-child(3) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 100%;
+    }
+}
+}

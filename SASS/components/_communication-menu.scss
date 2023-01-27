@@ -1,0 +1,61 @@
+.communication-menu {
+    display: none;
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.communication-menu__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
+}
+
+.communication-menu__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+    transition: color $mainDuration $mainTimingFunction;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+.communication-menu__item:nth-child(1) & {
+    padding-top: 21px;
+    padding-bottom: 5px;
+}
+
+.communication-menu__item:nth-child(2) & {
+    padding-top: 5px;
+    padding-bottom: 21px;
+}
+
+.communication-menu__item:nth-child(1) &,
+.communication-menu__item:nth-child(2) & {
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+&:hover, &:focus {
+    color: $accentColor;
+}
+}
+
+.communication-menu__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

@@ -1,0 +1,98 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    height: 50px;
+    background-color: $accentColor;
+    border-color: $accentColor;
+    box-shadow: $buttonShadow;
+    border-radius: 4px;
+
+    font-family: $primaryFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: $liteTextColor;
+    cursor: pointer;
+
+&--hero {
+    animation-name: animationHeroBtn;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: both;
+
+    @media screen and (min-width: 1200px) {
+        animation-name: animationHeroBtnDesktop;
+        
+    }
+
+}
+
+&--footer {
+    display: block;
+    width: 200px;
+    height: 50px;
+    transition: background-color $mainDuration $mainTimingFunction;
+}
+
+&--footer:hover,
+&--footer:focus {
+    background-color: #188CE8;
+}
+
+&--modal {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color $mainDuration $mainTimingFunction;
+}
+
+&--modal:hover,
+&--modal:focus {
+    background-color: #188CE8;
+}
+
+&--filter {
+    width: auto;
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+   
+   
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: $secondaryTextColor;
+    background-color: $secondaryBackgroundColor;
+    border-width: 0;
+    
+    transition: color $mainDuration $mainTimingFunction, background-color $mainDuration $mainTimingFunction, box-shadow $mainDuration $mainTimingFunction;
+}
+
+&--filter-first {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+&--filter:hover,
+&--filter:focus {
+    color: $liteTextColor;
+    background-color: $accentColor;
+    box-shadow: $buttonFilterHoverShadow;
+}
+
+}
+
+.button__icon {
+    margin-left: 10px;
+    fill: $liteTextColor;
+}

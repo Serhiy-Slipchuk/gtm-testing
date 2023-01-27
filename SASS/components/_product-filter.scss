@@ -1,0 +1,29 @@
+.product-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+        
+    @media screen and (max-width: 767px) {
+        margin-top: -15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
+&__item {
+    @media screen and (max-width: 767px) {
+        margin-top: 15px;
+    }
+}
+
+&__item:not(:last-child) {
+        margin-right: 8px;
+}
+
+&__item:nth-child(3) {
+    @media screen and (min-width: 476px) and (max-width: 767px) {
+        margin-right: 13px;
+    }
+}
+}

@@ -1,0 +1,46 @@
+.socials {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+&--footer {
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
+}
+}
+
+.socials__item {
+    width: 44px;
+    height: 44px;
+       
+&:not(:last-child) {
+    margin-right: 10px;
+    }
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: $iconColor;
+    background-color: transparent;
+    transition: color $mainDuration $mainTimingFunction, background-color $mainDuration $mainTimingFunction;
+
+&:hover {
+        color: $liteTextColor;
+        background-color: $accentColor;
+    }
+}
+
+.socials__link--footer {
+    color: $liteTextColor;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon {
+    fill: currentColor;
+}

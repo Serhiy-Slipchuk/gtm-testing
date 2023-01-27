@@ -1,0 +1,33 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: $primaryBackgroundColor;
+    }
+
+&__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+&__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 500px;
+    }
+
+    @media screen and (min-width: 1200px){
+    width: 519px; 
+    }
+}
+}

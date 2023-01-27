@@ -1,0 +1,68 @@
+.navigation-menu {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.navigation-menu__item {
+    color: $secondaryTextColor;
+
+&:not(:first-child) {
+    margin-left: 50px;
+}
+
+&--current {
+    position: relative;
+    color: $accentColor;
+}
+
+&--current::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+}
+}
+
+
+.navigation-menu__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    transition: color $mainDuration $mainTimingFunction;
+
+
+&::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+    transform: scaleX(0);
+    transition: transform $mainDuration $mainTimingFunction;
+}
+
+&:hover, &:focus {
+    color: $accentColor;
+}
+
+&:hover::after {
+    transform: scaleX(1);
+}
+}

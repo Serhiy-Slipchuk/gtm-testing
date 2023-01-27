@@ -1,0 +1,55 @@
+@keyframes animationTitle {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(-118px);
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animationHeroBtn {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(118px);
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animationTitleDesktop {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animationHeroBtnDesktop {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0);
+    }
+}
